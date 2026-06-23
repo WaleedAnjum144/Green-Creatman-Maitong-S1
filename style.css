@@ -349,22 +349,22 @@ main {
     margin-bottom: 22px;
 }
 
- .lg-visible{
-        display: none;
-    }
+.lg-visible {
+    display: none;
+}
 
-    @media (min-width:475px){
-    .lg-visible{
+@media (min-width:475px) {
+    .lg-visible {
         display: block;
     }
 }
 
-    .md-visible{
-        display: none;
-    }
+.md-visible {
+    display: none;
+}
 
-@media (max-width:475px){
-    .md-visible{
+@media (max-width:475px) {
+    .md-visible {
         display: block;
     }
 }
@@ -2445,10 +2445,13 @@ option:hover {
 
     .products-grid,
     .brands-grid,
-    .footer-grid,
-    .about-stats-grid {
+    .footer-grid {
         grid-template-columns: 1fr;
     }
+
+    /* .about-stats-grid {
+        grid-template-columns: 2fr;
+    } */
 
     .products-header {
         flex-direction: column;
