@@ -277,6 +277,7 @@ main {
 }
 
 /* Hero */
+
 .hero {
     position: relative;
     min-height: 850px;
@@ -346,6 +347,26 @@ main {
     color: var(--primary);
     letter-spacing: -0.04em;
     margin-bottom: 22px;
+}
+
+ .lg-visible{
+        display: none;
+    }
+
+    @media (min-width:475px){
+    .lg-visible{
+        display: block;
+    }
+}
+
+    .md-visible{
+        display: none;
+    }
+
+@media (max-width:475px){
+    .md-visible{
+        display: block;
+    }
 }
 
 .accent-text {
