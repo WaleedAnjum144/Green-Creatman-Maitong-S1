@@ -276,6 +276,148 @@ a {
     gap: 16px;
 }
 
+
+/* ===================== DESKTOP DROPDOWN ===================== */
+.nav-dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: -4px;
+}
+
+.nav-dropdown .dropdown-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.dropdown-arrow {
+    font-size: 0.75rem;
+    transition: transform 0.3s ease;
+}
+
+.nav-dropdown:hover .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 380px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    margin-top: 12px;
+}
+
+.nav-dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.2s ease;
+}
+
+.dropdown-menu a:hover {
+    background: #f4f8f5;
+}
+
+.dropdown-menu a i {
+    font-size: 1.4rem;
+    color: #2e7d32; /* Adjust to your brand green */
+    width: 32px;
+    text-align: center;
+}
+
+.dropdown-menu a strong {
+    display: block;
+    font-size: 0.95rem;
+    color: #111;
+}
+
+.dropdown-menu a span {
+    display: block;
+    font-size: 0.8rem;
+    color: #777;
+    margin-top: 2px;
+}
+
+/* ===================== MOBILE DROPDOWN ===================== */
+.mobile-dropdown {
+    width: 100%;
+}
+
+.mobile-dropdown-toggle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    border: none;
+    /* padding: 14px 0; */
+    color: inherit;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #475569;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.mobile-dropdown-arrow {
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+.mobile-dropdown.active .mobile-dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.mobile-dropdown-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding-left: 16px;
+}
+
+.mobile-dropdown.active .mobile-dropdown-menu {
+    max-height: 200px;
+}
+
+.mobile-dropdown-menu a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 0;
+    font-size: 0.95rem;
+}
+
+.mobile-dropdown-menu a i {
+    color: #2e7d32; /* Adjust to your brand green */
+}
+
+
+
+
 /* Main */
 main {
     margin-top: 84px;
@@ -2311,7 +2453,7 @@ option:hover {
 
 .footer-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 34px;
     padding: 42px 0;
 }
@@ -2566,9 +2708,12 @@ option:hover {
     }
 
     .products-grid,
-    .brands-grid,
-    .footer-grid {
+    .brands-grid {
         grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 2fr;
     }
 
     /* .about-stats-grid {
@@ -2634,8 +2779,31 @@ option:hover {
         bottom: 1rem;
         font-size: 0.82rem;
     }
+
+    
 }
 
+
+/* Tablet: 3 columns */
+@media (min-width: 768px) and (max-width: 992px) {
+    .footer-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Small tablet / large mobile: 2 columns */
+@media (min-width: 520px) and (max-width: 767px) {
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 519px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
 /* ============================================================
    KITCHEN SWIPER STYLES

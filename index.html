@@ -41,7 +41,30 @@
             <nav class="nav-links" id="nav-links">
                 <a href="#home" class="active">Home</a>
                 <a href="about.html">About</a>
-                <a href="products.html">Products</a>
+
+                <!-- Products Dropdown -->
+                <div class="nav-dropdown">
+                    <a href="products.html" class="dropdown-toggle">
+                        Products <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="solar.html">
+                            <i class="fa-solid fa-solar-panel"></i>
+                            <div>
+                                <strong>Solar Equipments</strong>
+                                <span>Inverters, Panels & Batteries</span>
+                            </div>
+                        </a>
+                        <a href="kitchen.html">
+                            <i class="fa-solid fa-utensils"></i>
+                            <div>
+                                <strong>Kitchen Equipments</strong>
+                                <span>Ice Machines & Dishwashers</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
                 <a href="#brands">Brands</a>
                 <a href="#catalogue">Catalogue</a>
                 <a href="contact.html">Contact</a>
@@ -69,11 +92,11 @@
                     <img src="imagess/Solar and kitchen products img.png" alt="Solar rooftop system" />
                 </div>
                 <div class="hero-slide">
-                    <img src="assets/images/hero slider 1.jpg" alt="Commercial Kitchen Setup" />
+                    <img src="imagess/solar hero banner.png" alt="Commercial Kitchen Setup" />
                 </div>
 
                 <div class="hero-slide">
-                    <img src="assets/images/image1.png" alt="Solar inverter setup" />
+                    <img src="imagess/Kitchen hero Banner.png" alt="Solar inverter setup" />
                 </div>
                 <div class="hero-overlay"></div>
             </div>
@@ -127,6 +150,7 @@
                 <button class="hero-dot" data-slide="2"></button>
             </div>
         </section>
+
 
         <!-- ===================== ABOUT ===================== -->
         <section class="about-section" id="about">
@@ -786,7 +810,7 @@
 
                 <div class="contact-section-header">
                     <span class="label-caps">CONTACT US</span>
-                    <h2>Let’s Build Your Solar Solution</h2>
+                    <h2>Let’s Build Your Solar & Kitchen Solutions</h2>
                     <p>
                         Speak with Green Creatman Maitong for solar product inquiries, quotations,
                         catalogue support, and project-based recommendations.
@@ -804,9 +828,9 @@
                                 <i class="fa-solid fa-solar-panel"></i>
                             </div>
 
-                            <span class="contact-small-label">Solar Support Desk</span>
+                            <span class="contact-small-label">Solar & Kitchen Support Desk</span>
 
-                            <h3>Professional Solar Product Consultation</h3>
+                            <h3>Professional Solar & Kitchen Solutions Product Consultation</h3>
 
                             <p>
                                 Whether you need inverters, solar panels, batteries, or a complete solar product
@@ -901,6 +925,8 @@
                                             <option value="">Select Product Type</option>
                                             <option>Inverter</option>
                                             <option>Solar Panel</option>
+                                            <option>Manitowoc Ice</option>
+                                            <option>Bingeedi Ice & Wash</option>
                                             <option>Battery</option>
                                             <option>Complete Solar Solution</option>
                                             <option>Catalogue / Brochure Request</option>
@@ -950,19 +976,20 @@
                         <div class="footer-brand-mark">G</div>
                         <div class="footer-brand-text">
                             <strong>Green Creatman Maitong</strong>
-                            <span>Professional Solar Energy Solutions</span>
+                            <span>Solar & Commercial Kitchen Solutions</span>
                         </div>
                     </a>
 
                     <p class="footer-desc">
-                        We supply trusted solar inverters, premium solar panels, and reliable battery storage
-                        systems for residential, commercial, and industrial applications.
+                        We supply genuine solar inverters, premium solar panels, and world-class commercial
+                        kitchen equipment — including ice machines and dishwashers — for residential, commercial,
+                        and industrial applications across Southeast Asia.
                     </p>
                 </div>
 
                 <div class="footer-cta-box">
                     <h4>Need Product Support?</h4>
-                    <p>Talk to us for solar product recommendations and quotation support.</p>
+                    <p>Talk to us for solar or kitchen equipment recommendations and quotation support.</p>
                     <a href="#contact"><button class="btn-primary">Contact Us</button></a>
                 </div>
             </div>
@@ -975,24 +1002,34 @@
                         <li><a href="about.html">About</a></li>
                         <li><a href="products.html">Products</a></li>
                         <li><a href="#catalogue">Catalogue</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-col">
-                    <h6>Product Categories</h6>
+                    <h6>Solar & Energy</h6>
                     <ul>
-                        <li><a href="#products">Solar Inverters</a></li>
-                        <li><a href="#products">Solar Panels</a></li>
-                        <li><a href="#products">Battery Storage</a></li>
+                        <li><a href="solar-products.html">Solar Inverters</a></li>
+                        <li><a href="solar-products.html">Solar Panels</a></li>
+                        <li><a href="solar-products.html">Battery Storage</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-col">
-                    <h6>Brands</h6>
+                    <h6>Kitchen Equipment</h6>
                     <ul>
-                        <li><a href="#brands">Deye / Goodwe / Solis</a></li>
-                        <li><a href="#brands">Trina / Longi / Jinko</a></li>
-                        <li><a href="#brands">Solax / Solis / Yourich</a></li>
+                        <li><a href="kitchen-products.html">Ice Machines</a></li>
+                        <li><a href="kitchen-products.html">Dishwashers</a></li>
+                        <li><a href="kitchen-products.html">Bingeedi Series</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h6>Our Brands</h6>
+                    <ul>
+                        <li><a href="#brands">Deye / Goodwe / Ginlong</a></li>
+                        <li><a href="#brands">Aiko / LONGi / Jinko / Trina</a></li>
+                        <li><a href="#brands">Manitowoc / Hobart / Bingeedi</a></li>
                     </ul>
                 </div>
 
@@ -1017,7 +1054,6 @@
             </div>
         </div>
     </footer>
-
     <!-- ===================== MOBILE MENU ===================== -->
     <div class="mobile-menu" id="mobile-menu">
         <div class="mobile-menu-header">
@@ -1027,7 +1063,22 @@
         <nav class="mobile-nav">
             <a href="index.html" class="active">Home</a>
             <a href="about.html">About</a>
-            <a href="products.html">Products</a>
+
+            <!-- Mobile Products Dropdown -->
+            <div class="mobile-dropdown">
+                <button class="mobile-dropdown-toggle" id="mobile-products-toggle">
+                    Products <i class="fa-solid fa-chevron-down mobile-dropdown-arrow"></i>
+                </button>
+                <div class="mobile-dropdown-menu" id="mobile-products-menu">
+                    <a href="solar.html">
+                        <i class="fa-solid fa-solar-panel"></i> Solar Equipments
+                    </a>
+                    <a href="kitchen.html">
+                        <i class="fa-solid fa-utensils"></i> Kitchen Equipments
+                    </a>
+                </div>
+            </div>
+
             <a href="#brands">Brands</a>
             <a href="#catalogue">Catalogue</a>
             <a href="contact.html">Contact</a>

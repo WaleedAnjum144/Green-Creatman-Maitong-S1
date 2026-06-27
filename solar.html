@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Green Creatman Maitong | Solar Energy Solutions</title>
+    <title>Jiujiang Maitong | Solar & Commercial Kitchen Solutions</title>
 
     <link rel="icon" href="imagess/favicon.png" type="image/x-icon">
 
@@ -15,41 +15,41 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-    <!-- Swiper -->
+    <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="solar.css">
 </head>
 
 <body>
-
 
     <!-- ===================== NAVBAR ===================== -->
     <header class="navbar" id="navbar">
         <div class="container nav-inner">
 
-            <a href="#home" class="brand">
+            <a href="index.html" class="brand">
                 <div class="brand-mark">
-                    <span>G</span>
+                    <span>J</span>
                 </div>
                 <div class="brand-text">
-                    <strong>Green Creatman Maitong</strong>
-                    <span>Solar Energy Solutions</span>
+                    <strong>Jiujiang Maitong</strong>
+                    <span>Solar & Kitchen Solutions</span>
                 </div>
             </a>
 
             <nav class="nav-links" id="nav-links">
-                <a href="index.html">Home</a>
+                <a href="index.html" class="active">Home</a>
                 <a href="about.html">About</a>
+
                 <!-- Products Dropdown -->
                 <div class="nav-dropdown">
-                    <a href="products.html" class="dropdown-toggle active">
+                    <a href="products.html" class="dropdown-toggle">
                         Products <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
                     </a>
                     <div class="dropdown-menu">
-                        <a href="solar.html">
+                        <a href="solar.html" class="active">
                             <i class="fa-solid fa-solar-panel"></i>
                             <div>
                                 <strong>Solar Equipments</strong>
@@ -65,6 +65,7 @@
                         </a>
                     </div>
                 </div>
+
                 <a href="#brands">Brands</a>
                 <a href="#catalogue">Catalogue</a>
                 <a href="contact.html">Contact</a>
@@ -84,483 +85,402 @@
     </header>
 
 
-
-    <!-- ===================== PRODUCTS PAGE HERO (STATIC BG) ===================== -->
-    <section class="products-page-hero" id="products-hero">
-
-        <!-- Static Background Image -->
-        <div class="products-hero-bg">
-            <img src="imagess/products banner 1.png" alt="Solar panels and inverters background">
-            <!-- Gradient Overlay -->
-            <div class="hero-overlay"></div>
-        </div>
-
-        <!-- Hero Content -->
-        <div class="container hero-content products-hero-content">
-            <div class="hero-eyebrow">
-                <div class="eyebrow-line"></div>
-                <span class="label-caps">AUTHORIZED B2B SUPPLY</span>
-            </div>
-
-            <h1 class="hero-title">
-                High-Performance<br>
-                <span class="accent-text">Solar & Commercial Kitchen Systems</span>
-            </h1>
-
-            <p class="hero-desc">
-                Source with confidence. Explore our authorized range of Tier-1
-                <strong>Solar Inverters & Modules</strong> (Deye, LONGi, Trina) alongside
-                heavy-duty <strong>Ice Machines & Dishwashers</strong> (Hobart, Manitowoc, Bingeedi).
-            </p>
-
-            <div class="hero-buttons">
-                <a href="#catalogue">
-                    <button class="btn-primary">Browse Both Catalogs</button>
-                </a>
-                <a href="#brands">
-                    <button class="btn-outline">Filter By Brand</button>
-                </a>
-            </div>
-
-            <div class="hero-mini-stats">
-                <div>
-                    <strong>2</strong>
-                    <span>Dedicated Catalogs</span>
-                </div>
-                <div>
-                    <strong>100%</strong>
-                    <span>Factory Genuine</span>
-                </div>
-                <div>
-                    <strong>Ready</strong>
-                    <span>SEA Local Stock</span>
+    <main>
+        <!-- ===================== HERO SECTION ===================== -->
+        <section class="hero" id="solar-hero" style="min-height: 800px;">
+            <div class="hero-bg-slides">
+                <div class="hero-slide active">
+                    <img src="imagess/solar hero banner.png" alt="Solar Panel Installation"
+                      >
                 </div>
             </div>
-        </div>
-
-    </section>
-
-    <!-- ===================== PRODUCTS: SOLAR & KITCHEN ===================== -->
-    <section class="products-section" id="products">
-        <div class="container">
-
-            <div class="products-header">
-                <div>
-                    <span class="label-caps">DIVISION 01</span>
-                    <h2>New Energy & Solar Products</h2>
-                </div>
-                <button class="btn-text">Deye • GoodWe • Trina • Jinko</button>
+            <!-- Gradient Overlay matching your style guide -->
+            <div class="hero-overlay"
+                style="background: linear-gradient(to right, rgba(17, 24, 39, 0.96) 25%, rgba(17, 24, 39, 0.85) 45%, rgba(17, 24, 39, 0.4) 75%, rgba(17, 24, 39, 0.1) 100%);">
             </div>
 
-            <!-- Solar Products Grid -->
-            <div class="products-grid" style="margin-bottom: 80px;">
-
-                <div class="product-card reveal">
-                    <div class="product-top-bar">
-                        <span class="label-caps">INVERTER</span>
-                        <div class="dot"></div>
-                    </div>
-                    <div class="product-body">
-                        <img src="Product Images/deye-goodwe-solis-solar-hybrid-inverter--1.webp" alt="Deye inverter">
-                        <h4>Deye Inverter</h4>
-                        <p class="product-model">Hybrid / On-grid Solutions</p>
-                    </div>
-                    <div class="product-footer">
-                        <div class="stock-row">
-                            <span>Brand</span>
-                            <span class="stock-ready">Deye</span>
-                        </div>
-                    </div>
+            <div class="container hero-content">
+                <div class="hero-eyebrow">
+                    <div class="eyebrow-line"></div>
+                    <span class="label-caps" style="color: var(--accent) !important;">DIVISION 01</span>
                 </div>
 
-                <div class="product-card reveal">
-                    <div class="product-top-bar">
-                        <span class="label-caps">INVERTER</span>
-                        <div class="dot"></div>
-                    </div>
-                    <div class="product-body">
-                        <img src="Product Images/deye-goodwe-solis-solar-hybrid-inverter--2.jpg" alt="Goodwe inverter">
-                        <h4>Goodwe Inverter</h4>
-                        <p class="product-model">Residential / Commercial Grade</p>
-                    </div>
-                    <div class="product-footer">
-                        <div class="stock-row">
-                            <span>Brand</span>
-                            <span class="stock-ready">Goodwe</span>
-                        </div>
-                    </div>
-                </div>
+                <h1 class="hero-title" style="color: #fff;">
+                    New Energy &<br>
+                    <span class="accent-text">Solar Products</span>
+                </h1>
 
-                <div class="product-card reveal">
-                    <div class="product-top-bar">
-                        <span class="label-caps">PANEL</span>
-                        <div class="dot"></div>
-                    </div>
-                    <div class="product-body">
-                        <img src="Product Images/trina-solar-vertex-s-n-type-solar-panel-1.webp" alt="Trina panel">
-                        <h4>Trina Solar Panel</h4>
-                        <p class="product-model">High Efficiency Modules</p>
-                    </div>
-                    <div class="product-footer">
-                        <div class="stock-row">
-                            <span>Brand</span>
-                            <span class="stock-ready">Trina</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-card reveal">
-                    <div class="product-top-bar">
-                        <span class="label-caps">PANEL</span>
-                        <div class="dot"></div>
-                    </div>
-                    <div class="product-body">
-                        <img src="Product Images/longi-hi-mo-7-solar-panel-product-1.png" alt="Longi Hi-MO 7 panel">
-                        <h4>Longi Hi-MO 7</h4>
-                        <p class="product-model">Premium Solar Module Series</p>
-                    </div>
-                    <div class="product-footer">
-                        <div class="stock-row">
-                            <span>Brand</span>
-                            <span class="stock-ready">Longi</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-card reveal">
-                    <div class="product-top-bar">
-                        <span class="label-caps">PANEL</span>
-                        <div class="dot"></div>
-                    </div>
-                    <div class="product-body">
-                        <img src="Product Images/jinko-tiger-neo-n-type-solar-panel-1.png" alt="Jinko panel">
-                        <h4>Jinko Solar Panel</h4>
-                        <p class="product-model">Reliable Energy Generation</p>
-                    </div>
-                    <div class="product-footer">
-                        <div class="stock-row">
-                            <span>Brand</span>
-                            <span class="stock-ready">Jinko</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-card reveal">
-                    <div class="product-top-bar">
-                        <span class="label-caps">BATTERY</span>
-                        <div class="dot"></div>
-                    </div>
-                    <div class="product-body">
-                        <img src="Product Images/solis-s6-hybrid-solar-inverter-product-p-2.jpg" alt="Solis battery">
-                        <h4>Solis Battery</h4>
-                        <p class="product-model">Efficient Backup Storage</p>
-                    </div>
-                    <div class="product-footer">
-                        <div class="stock-row">
-                            <span>Brand</span>
-                            <span class="stock-ready">Solis</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Divider between divisions -->
-            <div style="width: 100%; height: 1px; background: #e2e8f0; margin-bottom: 80px;"></div>
-
-            <!-- Kitchen Products Header -->
-            <div class="products-header">
-                <div>
-                    <span class="label-caps">DIVISION 02</span>
-                    <h2>Commercial Kitchen Equipment</h2>
-                </div>
-                <button class="btn-text">Manitowoc • Hobart • Bingeedi</button>
-            </div>
-
-            <!-- Kitchen Products Swiper -->
-            <div class="kitchen-slider-container">
-                <div class="swiper kitchenSwiper">
-                    <div class="swiper-wrapper">
-
-                        <div class="swiper-slide">
-                            <div class="product-card">
-                                <div class="product-top-bar"><span class="label-caps">COLD</span>
-                                    <div class="dot"></div>
-                                </div>
-                                <div class="product-body">
-                                    <img src="assets/images/cold-room.jpeg" alt="Cold Room">
-                                    <h4>Cold Room Storage</h4>
-                                    <p class="product-model">Industrial Cooling</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="product-card">
-                                <div class="product-top-bar"><span class="label-caps">WASH</span>
-                                    <div class="dot"></div>
-                                </div>
-                                <div class="product-body">
-                                    <img src="assets/images/dish-washer.jpeg" alt="Dish Washer">
-                                    <h4>Commercial Dishwasher</h4>
-                                    <p class="product-model">High Efficiency Wash</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="product-card">
-                                <div class="product-top-bar"><span class="label-caps">WASH</span>
-                                    <div class="dot"></div>
-                                </div>
-                                <div class="product-body">
-                                    <img src="assets/images/dish-washing-machine.jpeg" alt="Industrial Washer">
-                                    <h4>Hood-Type Dishwasher</h4>
-                                    <p class="product-model">Heavy Duty Series</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="product-card">
-                                <div class="product-top-bar"><span class="label-caps">HEAT</span>
-                                    <div class="dot"></div>
-                                </div>
-                                <div class="product-body">
-                                    <img src="assets/images/gas-heater.jpeg" alt="Gas Heater">
-                                    <h4>Industrial Gas Heater</h4>
-                                    <p class="product-model">Direct Firing Unit</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="product-card">
-                                <div class="product-top-bar"><span class="label-caps">ICE</span>
-                                    <div class="dot"></div>
-                                </div>
-                                <div class="product-body">
-                                    <img src="assets/images/ice-cubes.png" alt="Ice Cube Machine">
-                                    <h4>Ice Cube Machine</h4>
-                                    <p class="product-model">Solid Cube System</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="product-card">
-                                <div class="product-top-bar"><span class="label-caps">ICE</span>
-                                    <div class="dot"></div>
-                                </div>
-                                <div class="product-body">
-                                    <img src="assets/images/ice-flakes.png" alt="Ice Flakes">
-                                    <h4>Ice Flake Machine</h4>
-                                    <p class="product-model">Preservation Cooling</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="product-card">
-                                <div class="product-top-bar"><span class="label-caps">COFFEE</span>
-                                    <div class="dot"></div>
-                                </div>
-                                <div class="product-body">
-                                    <img src="assets/images/image1.png" alt="Espresso Machine">
-                                    <h4>Multi-Group Espresso</h4>
-                                    <p class="product-model">Barista Grade Station</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- Swiper Controls -->
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- ===================== BRANDS ===================== -->
-    <!-- Paste your exact Brands section here -->
-    <section class="brands-section" id="brands">
-        <div class="container">
-            <div class="brands-header">
-                <span class="label-caps">TRUSTED BRANDS</span>
-                <h2>We Work With Leading Solar Manufacturers</h2>
-                <p class="brands-subtext">
-                    Our product portfolio includes carefully selected solar brands known for performance,
-                    reliability, and long-term value across inverter, panel, and battery categories.
+                <p class="hero-desc" style="color: var(--text-light); opacity: 0.9;">
+                    Empowering Southeast Asia with Tier-1 solar solutions. We supply genuine inverters, high-efficiency
+                    panels, and reliable battery storage systems for residential and commercial grids.
                 </p>
-                <div class="header-line"></div>
+
+                <div class="hero-buttons">
+                    <a href="#solar-products">
+                        <button class="btn-primary">View Products</button>
+                    </a>
+                    <a href="#solar-catalogue">
+                        <button class="btn-outline"
+                            style="background: rgba(255,255,255,0.1); color: #fff; border-color: rgba(255,255,255,0.35);">Download
+                            Catalogue</button>
+                    </a>
+                </div>
+
+                <div class="hero-mini-stats">
+                    <div
+                        style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); backdrop-filter: blur(10px);">
+                        <strong>6+</strong>
+                        <span style="color: #cbd5e1;">Tier-1 Brands</span>
+                    </div>
+                    <div
+                        style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); backdrop-filter: blur(10px);">
+                        <strong>100%</strong>
+                        <span style="color: #cbd5e1;">Genuine Supply</span>
+                    </div>
+                    <div
+                        style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); backdrop-filter: blur(10px);">
+                        <strong>Ready</strong>
+                        <span style="color: #cbd5e1;">Local Stock</span>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="brands-grid">
-                <!-- INVERTER BRANDS -->
-                <div class="brand-group">
-                    <div class="brand-group-head">
-                        <span class="brand-group-badge">Inverter Brands</span>
-                        <h3>Smart Power Conversion</h3>
-                        <p>Reliable inverter solutions for residential, commercial, and hybrid solar systems.</p>
+
+        <!-- ===================== ABOUT SECTION ===================== -->
+        <section class="about-section" id="solar-about">
+            <div class="container">
+                <div class="about-shell">
+
+                    <!-- Left: Content Column -->
+                    <div class="about-left">
+                        <div class="about-badge">ABOUT OUR SOLAR DIVISION</div>
+                        <h2 class="about-title">
+                            Powering The Future With <span>Clean Energy</span>
+                        </h2>
+
+                        <p class="about-lead">
+                            Jiujiang Maitong supplies premium solar inverters, panels, and battery storage systems that
+                            meet the demanding needs of residential, commercial, and industrial projects across
+                            Southeast Asia. We combine world-renowned brands with localized technical support to offer
+                            solutions for every energy requirement.
+                        </p>
+
+                        <div class="about-feature-list">
+                            <!-- Feature 1 -->
+                            <div class="about-feature-card">
+                                <div class="about-feature-icon">
+                                    <i class="fa-solid fa-bolt"></i>
+                                </div>
+                                <div>
+                                    <h4>High-Efficiency Inverters</h4>
+                                    <p>Smart hybrid and on-grid solutions from Deye, Goodwe, and Solis for maximum
+                                        energy conversion.</p>
+                                </div>
+                            </div>
+
+                            <!-- Feature 2 -->
+                            <div class="about-feature-card">
+                                <div class="about-feature-icon">
+                                    <i class="fa-solid fa-sun"></i>
+                                </div>
+                                <div>
+                                    <h4>Tier-1 Solar Panels</h4>
+                                    <p>Premium modules from Trina, Longi, and Jinko engineered for dependable output and
+                                        longevity.</p>
+                                </div>
+                            </div>
+
+                            <!-- Feature 3 -->
+                            <div class="about-feature-card">
+                                <div class="about-feature-icon">
+                                    <i class="fa-solid fa-car-battery"></i>
+                                </div>
+                                <div>
+                                    <h4>Reliable Energy Storage</h4>
+                                    <p>Battery systems designed for backup power, self-consumption, and smart energy
+                                        management.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 36px;">
+                            <a href="#solar-products">
+                                <button class="btn-primary">Explore Products</button>
+                            </a>
+                        </div>
                     </div>
-                    <div class="brand-list">
-                        <div class="brand-box reveal">
-                            <div class="brand-icon">D</div>
-                            <div class="brand-info">
-                                <strong>Deye</strong>
-                                <span>Hybrid / On-Grid Inverter</span>
+
+                    <!-- Right: Styled Image Visual -->
+                    <div class="about-right">
+                        <div class="about-image-card">
+                            <img src="assets/images/about team img.avif" alt="Solar Energy Systems">
+                            <div class="about-floating-box">
+                                <strong>Authorized Distributor</strong>
+                                <span>Supplying genuine Tier-1 solar products with full factory warranties.</span>
                             </div>
                         </div>
-                        <div class="brand-box reveal">
-                            <div class="brand-icon">G</div>
-                            <div class="brand-info">
-                                <strong>Goodwe</strong>
-                                <span>Smart Energy Inverter</span>
+
+                        <div class="about-stats-grid">
+                            <div class="about-stat-item">
+                                <strong>25+</strong>
+                                <span>Years Warranty</span>
+                            </div>
+                            <div class="about-stat-item accent-box">
+                                <strong>6</strong>
+                                <span>SEA Countries Supported</span>
                             </div>
                         </div>
-                        <div class="brand-box reveal">
-                            <div class="brand-icon">S</div>
-                            <div class="brand-info">
-                                <strong>Solis</strong>
-                                <span>Efficient Solar Conversion</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ===================== PRODUCTS SECTION ===================== -->
+        <section class="products-section" id="solar-products"
+            style="background: var(--surface-low); border-top: 1px solid var(--surface-border);">
+            <div class="container">
+
+                
+                <div class="products-header">
+                    <div>
+                        <span class="label-caps">DIVISION 01</span>
+                        <h2>New Energy & Solar Products</h2>
+                    </div>
+                    <button class="btn-text">Deye • GoodWe • Trina • Jinko</button>
+                </div>
+
+                <!-- Solar Products Grid -->
+                <div class="products-grid" style="margin-bottom: 80px;">
+
+                    <div class="product-card reveal">
+                        <div class="product-top-bar">
+                            <span class="label-caps">INVERTER</span>
+                            <div class="dot"></div>
+                        </div>
+                        <div class="product-body">
+                            <img src="Product Images/deye-goodwe-solis-solar-hybrid-inverter--1.webp"
+                                alt="Deye inverter">
+                            <h4>Deye Inverter</h4>
+                            <p class="product-model">Hybrid / On-grid Solutions</p>
+                        </div>
+                        <div class="product-footer">
+                            <div class="stock-row">
+                                <span>Brand</span>
+                                <span class="stock-ready">Deye</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card reveal">
+                        <div class="product-top-bar">
+                            <span class="label-caps">INVERTER</span>
+                            <div class="dot"></div>
+                        </div>
+                        <div class="product-body">
+                            <img src="Product Images/deye-goodwe-solis-solar-hybrid-inverter--2.jpg"
+                                alt="Goodwe inverter">
+                            <h4>Goodwe Inverter</h4>
+                            <p class="product-model">Residential / Commercial Grade</p>
+                        </div>
+                        <div class="product-footer">
+                            <div class="stock-row">
+                                <span>Brand</span>
+                                <span class="stock-ready">Goodwe</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card reveal">
+                        <div class="product-top-bar">
+                            <span class="label-caps">PANEL</span>
+                            <div class="dot"></div>
+                        </div>
+                        <div class="product-body">
+                            <img src="Product Images/trina-solar-vertex-s-n-type-solar-panel-1.webp" alt="Trina panel">
+                            <h4>Trina Solar Panel</h4>
+                            <p class="product-model">High Efficiency Modules</p>
+                        </div>
+                        <div class="product-footer">
+                            <div class="stock-row">
+                                <span>Brand</span>
+                                <span class="stock-ready">Trina</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card reveal">
+                        <div class="product-top-bar">
+                            <span class="label-caps">PANEL</span>
+                            <div class="dot"></div>
+                        </div>
+                        <div class="product-body">
+                            <img src="Product Images/longi-hi-mo-7-solar-panel-product-1.png" alt="Longi Hi-MO 7 panel">
+                            <h4>Longi Hi-MO 7</h4>
+                            <p class="product-model">Premium Solar Module Series</p>
+                        </div>
+                        <div class="product-footer">
+                            <div class="stock-row">
+                                <span>Brand</span>
+                                <span class="stock-ready">Longi</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card reveal">
+                        <div class="product-top-bar">
+                            <span class="label-caps">PANEL</span>
+                            <div class="dot"></div>
+                        </div>
+                        <div class="product-body">
+                            <img src="Product Images/jinko-tiger-neo-n-type-solar-panel-1.png" alt="Jinko panel">
+                            <h4>Jinko Solar Panel</h4>
+                            <p class="product-model">Reliable Energy Generation</p>
+                        </div>
+                        <div class="product-footer">
+                            <div class="stock-row">
+                                <span>Brand</span>
+                                <span class="stock-ready">Jinko</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card reveal">
+                        <div class="product-top-bar">
+                            <span class="label-caps">BATTERY</span>
+                            <div class="dot"></div>
+                        </div>
+                        <div class="product-body">
+                            <img src="Product Images/solis-s6-hybrid-solar-inverter-product-p-2.jpg"
+                                alt="Solis battery">
+                            <h4>Solis Battery</h4>
+                            <p class="product-model">Efficient Backup Storage</p>
+                        </div>
+                        <div class="product-footer">
+                            <div class="stock-row">
+                                <span>Brand</span>
+                                <span class="stock-ready">Solis</span>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- PANEL BRANDS -->
-                <div class="brand-group">
-                    <div class="brand-group-head">
-                        <span class="brand-group-badge">Panel Brands</span>
-                        <h3>High-Efficiency Modules</h3>
-                        <p>Premium solar panels engineered for dependable output and long-term generation.</p>
-                    </div>
-                    <div class="brand-list">
-                        <div class="brand-box reveal">
-                            <div class="brand-icon">T</div>
-                            <div class="brand-info">
-                                <strong>Trina</strong>
-                                <span>Premium Solar Modules</span>
-                            </div>
-                        </div>
-                        <div class="brand-box reveal">
-                            <div class="brand-icon">L</div>
-                            <div class="brand-info">
-                                <strong>Longi Hi-MO 7</strong>
-                                <span>Advanced Panel Series</span>
-                            </div>
-                        </div>
-                        <div class="brand-box reveal">
-                            <div class="brand-icon">J</div>
-                            <div class="brand-info">
-                                <strong>Jinko</strong>
-                                <span>Trusted Solar Panels</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- BATTERY BRANDS -->
-                <div class="brand-group">
-                    <div class="brand-group-head">
-                        <span class="brand-group-badge">Battery Brands</span>
-                        <h3>Reliable Energy Storage</h3>
-                        <p>Battery systems designed for backup power, self-consumption, and smart energy management.</p>
-                    </div>
-                    <div class="brand-list">
-                        <div class="brand-box reveal">
-                            <div class="brand-icon">X</div>
-                            <div class="brand-info">
-                                <strong>Solax</strong>
-                                <span>Smart Home Storage</span>
-                            </div>
-                        </div>
-                        <div class="brand-box reveal">
-                            <div class="brand-icon">S</div>
-                            <div class="brand-info">
-                                <strong>Solis Battery</strong>
-                                <span>Battery Storage System</span>
-                            </div>
-                        </div>
-                        <div class="brand-box reveal">
-                            <div class="brand-icon">Y</div>
-                            <div class="brand-info">
-                                <strong>Yourich</strong>
-                                <span>Reliable Backup Energy</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- KITCHEN BRANDS -->
-                <div class="brand-group">
-                    <div class="brand-group-head">
-                        <span class="brand-group-badge" style="background:#e0f2fe; color:#0284c7;">Division 2</span>
-                        <h3>Kitchen Equipment</h3>
-                        <p>Industrial ice machines and dishwashers for the F&B sector.</p>
-                    </div>
-
-                    <div class="brand-list">
-                        <div class="brand-box reveal">
-                            <div class="brand-icon" style="color:#0284c7; background:#f0f9ff;"><i
-                                    class="fa-solid fa-snowflake"></i></div>
-                            <div class="brand-info">
-                                <strong>Premium Brands</strong>
-                                <span>Manitowoc Ice • Hobart</span>
-                            </div>
-                        </div>
-
-                        <div class="brand-box reveal">
-                            <div class="brand-icon" style="color:#0284c7; background:#f0f9ff;"><i
-                                    class="fa-solid fa-kitchen-set"></i></div>
-                            <div class="brand-info">
-                                <strong>Self-Owned Brand</strong>
-                                <span>Bingeedi Ice & Wash</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- SUPPORT BRAND -->
-                <div class="brand-group"
-                    style="background: linear-gradient(135deg, var(--primary), #0f4a3c); border:none;">
-                    <div class="brand-group-head">
-                        <span class="brand-group-badge"
-                            style="background:rgba(255,255,255,0.2); color:#fff;">After-Sales Subsidiary</span>
-                        <h3 style="color:#fff;">Green Astronaut</h3>
-                        <p style="color:rgba(255,255,255,0.8);">Our dedicated SEA support team handles maintenance,
-                            spare parts, and training.</p>
-                    </div>
-
-                    <div class="brand-list">
-                        <div class="brand-box reveal" style="background:rgba(255,255,255,0.1); border:none;">
-                            <div class="brand-icon"
-                                style="background:transparent; color:#b0f0d6; border:1px solid rgba(255,255,255,0.3);">
-                                <i class="fa-solid fa-globe"></i>
-                            </div>
-                            <div class="brand-info">
-                                <strong style="color:#fff;">6 Countries</strong>
-                                <span style="color:#b0f0d6;">MY, SG, ID, TH, VN, PH</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
 
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ===================== CATALOGUE ===================== -->
+        <!-- ===================== BRANDS ===================== -->
+        <section class="brands-section solar-brands" id="brands">
+            <div class="container">
+                <div class="brands-header">
+                    <span class="label-caps">AUTHORIZED DISTRIBUTOR</span>
+                    <h2>We Work With Leading Global Brands</h2>
+                    <p class="brands-subtext">
+                        By purchasing from us, clients obtain genuine top-brand products directly, backed by our local
+                        Green Astronaut Sdn Bhd subsidiaries across 6 SEA countries.
+                    </p>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="brands-grid">
+
+                    <!-- SOLAR BRANDS -->
+                    <div class="brand-group">
+                        <div class="brand-group-head">
+                            <span class="brand-group-badge">Division 1</span>
+                            <h3>Solar Products</h3>
+                            <p>Premium inverters and solar panels for reliable energy systems.</p>
+                        </div>
+
+                        <div class="brand-list">
+                            <div class="brand-box reveal">
+                                <div class="brand-icon"><i class="fa-solid fa-plug-circle-bolt"></i></div>
+                                <div class="brand-info">
+                                    <strong>Inverters</strong>
+                                    <span>Deye • GoodWe • Ginlong</span>
+                                </div>
+                            </div>
+
+                            <div class="brand-box reveal">
+                                <div class="brand-icon"><i class="fa-solid fa-solar-panel"></i></div>
+                                <div class="brand-info">
+                                    <strong>Solar Panels</strong>
+                                    <span>Aiko • LONGi • Jinko • Trina</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- KITCHEN BRANDS -->
+                    <div class="brand-group">
+                        <div class="brand-group-head">
+                            <span class="brand-group-badge" style="background:#e0f2fe; color:#0284c7;">Division 2</span>
+                            <h3>Kitchen Equipment</h3>
+                            <p>Industrial ice machines and dishwashers for the F&B sector.</p>
+                        </div>
+
+                        <div class="brand-list">
+                            <div class="brand-box reveal">
+                                <div class="brand-icon" style="color:#0284c7; background:#f0f9ff;"><i
+                                        class="fa-solid fa-snowflake"></i></div>
+                                <div class="brand-info">
+                                    <strong>Premium Brands</strong>
+                                    <span>Manitowoc Ice • Hobart</span>
+                                </div>
+                            </div>
+
+                            <div class="brand-box reveal">
+                                <div class="brand-icon" style="color:#0284c7; background:#f0f9ff;"><i
+                                        class="fa-solid fa-kitchen-set"></i></div>
+                                <div class="brand-info">
+                                    <strong>Self-Owned Brand</strong>
+                                    <span>Bingeedi Ice & Wash</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SUPPORT BRAND -->
+                    <div class="brand-group"
+                        style="background: linear-gradient(135deg, var(--primary), #0f4a3c); border:none;">
+                        <div class="brand-group-head">
+                            <span class="brand-group-badge"
+                                style="background:rgba(255,255,255,0.2); color:#fff;">After-Sales Subsidiary</span>
+                            <h3 style="color:#fff;">Green Astronaut</h3>
+                            <p style="color:rgba(255,255,255,0.8);">Our dedicated SEA support team handles maintenance,
+                                spare parts, and training.</p>
+                        </div>
+
+                        <div class="brand-list">
+                            <div class="brand-box reveal" style="background:rgba(255,255,255,0.1); border:none;">
+                                <div class="brand-icon"
+                                    style="background:transparent; color:#b0f0d6; border:1px solid rgba(255,255,255,0.3);">
+                                    <i class="fa-solid fa-globe"></i>
+                                </div>
+                                <div class="brand-info">
+                                    <strong style="color:#fff;">6 Countries</strong>
+                                    <span style="color:#b0f0d6;">MY, SG, ID, TH, VN, PH</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+          <!-- ===================== CATALOGUE SECTION  ===================== -->
 
     <section class="catalogue-section" id="catalogue">
+
+
         <div class="container">
 
             <div class="catalogue-header">
                 <span class="label-caps">PRODUCT CATALOGUES</span>
-                <h2>Explore Product Catalogues</h2>
+              <h2>Explore Our Complete <span class="accent-text">Solar Catalogues</span></h2>
                 <p class="catalogue-subtext">
                     View our solar product catalogues for inverters, solar panels, and battery storage systems.
                     Each catalogue includes product information, brand references, and specification details.
@@ -891,73 +811,6 @@
                     </div>
                 </div>
 
-                <!-- ================= KITCHEN CATALOGUES (DIVISION 2) ================= -->
-
-                <!-- 4. Kitchen Main Catalogue -->
-                <div class="catalogue-card light reveal" style="border-top: 4px solid #0284c7;">
-                    <div class="catalogue-icon-wrap">
-                        <div class="catalogue-icon"
-                            style="background:#f0f9ff; color:#0284c7; box-shadow: inset 0 0 0 1px rgba(2,132,199,0.15);">
-                            <i class="fa-solid fa-kitchen-set"></i>
-                        </div>
-                        <span class="cat-tag" style="color:#0284c7; border-color:rgba(2,132,199,0.2);">KITCHEN</span>
-                    </div>
-                    <div class="cat-content">
-                        <h3>Main Kitchen Catalogue</h3>
-                        <p>Complete range of commercial dishwashers, ice machines, and premium F&B equipment.</p>
-                    </div>
-                    <div class="catalogue-meta">
-                        <div class="meta-item"><span class="meta-label">Category</span><strong>F&B
-                                Equipment</strong></div>
-                        <div class="meta-item"><span class="meta-label">Content</span><strong>Full Range</strong>
-                        </div>
-                    </div>
-                    <div class="cat-actions">
-                        <button type="button" class="btn-primary cat-view" data-file="pdfs/Catalog.pdf"
-                            data-title="Main Kitchen Catalogue"
-                            style="background:#0284c7; box-shadow: 0 12px 28px rgba(2, 132, 199, 0.18);">
-                            <i class="fa-solid fa-eye"></i> View
-                        </button>
-                        <a href="pdfs/Catalog.pdf" download class="btn-outline cat-download"
-                            style="color:#0284c7; border-color:#bae6fd;">
-                            <i class="fa-solid fa-download"></i> Save
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 5. Kitchen 2025 Catalogue -->
-                <div class="catalogue-card light reveal" style="border-top: 4px solid #0284c7;">
-                    <div class="catalogue-icon-wrap">
-                        <div class="catalogue-icon"
-                            style="background:#f0f9ff; color:#0284c7; box-shadow: inset 0 0 0 1px rgba(2,132,199,0.15);">
-                            <i class="fa-solid fa-fire-burner"></i>
-                        </div>
-                        <span class="cat-tag" style="color:#0284c7; border-color:rgba(2,132,199,0.2);">NEW
-                            2025</span>
-                    </div>
-                    <div class="cat-content">
-                        <h3>2025 New Catalogue</h3>
-                        <p>Latest kitchen equipment models, upgraded dishwashers, and new product launches.</p>
-                    </div>
-                    <div class="catalogue-meta">
-                        <div class="meta-item"><span class="meta-label">Category</span><strong>F&B
-                                Equipment</strong></div>
-                        <div class="meta-item"><span class="meta-label">Edition</span><strong>2025 Series</strong>
-                        </div>
-                    </div>
-                    <div class="cat-actions">
-                        <button type="button" class="btn-primary cat-view" data-file="pdfs/2025_Catalog.pdf"
-                            data-title="2025 New Kitchen Catalogue"
-                            style="background:#0284c7; box-shadow: 0 12px 28px rgba(2, 132, 199, 0.18);">
-                            <i class="fa-solid fa-eye"></i> View
-                        </button>
-                        <a href="pdfs/2025_Catalog.pdf" download class="btn-outline cat-download"
-                            style="color:#0284c7; border-color:#bae6fd;">
-                            <i class="fa-solid fa-download"></i> Save
-                        </a>
-                    </div>
-                </div>
-
 
 
             </div>
@@ -994,6 +847,119 @@
         </div>
 
     </section>
+
+
+        <!-- ===================== REVIEWS SECTION ===================== -->
+        <section class="products-section" id="solar-reviews"
+            style="background: var(--surface-low); border-top: 1px solid var(--surface-border);">
+            <div class="container">
+
+                <div class="catalogue-header">
+                    <div class="hero-eyebrow" style="justify-content: center;">
+                        <div class="eyebrow-line"></div>
+                        <span class="label-caps">CLIENT TESTIMONIALS</span>
+                        <div class="eyebrow-line"></div>
+                    </div>
+                    <h2>Trusted by <span class="accent-text">Solar Installers & Owners</span></h2>
+                    <p class="catalogue-subtext">Hear what our regional solar partners say about our equipment and
+                        support.</p>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="products-grid">
+
+                    <!-- Review 1 -->
+                    <div class="product-card" style="padding: 32px; background: #fff; border-radius: 20px;">
+                        <div style="color: var(--accent); margin-bottom: 16px;">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p
+                            style="color: var(--text-soft); font-size: 14.5px; line-height: 1.7; font-style: italic; margin-bottom: 24px;">
+                            "The Deye inverters supplied by Jiujiang Maitong have been performing flawlessly in our
+                            commercial projects. Their technical support team is knowledgeable and responsive."
+                        </p>
+                        <div
+                            style="display: flex; align-items: center; gap: 14px; border-top: 1px solid #edf2f7; padding-top: 20px;">
+                            <div
+                                style="width: 48px; height: 48px; border-radius: 50%; background: var(--accent-soft); display: flex; align-items: center; justify-content: center; font-weight: 800; color: var(--accent);">
+                                RK</div>
+                            <div>
+                                <strong style="display: block; font-size: 14.5px; color: var(--primary);">Rajesh
+                                    Kumar</strong>
+                                <span style="display: block; font-size: 12px; color: var(--text-soft);">Solar Installer,
+                                    Singapore</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="product-card" style="padding: 32px; background: #fff; border-radius: 20px;">
+                        <div style="color: var(--accent); margin-bottom: 16px;">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p
+                            style="color: var(--text-soft); font-size: 14.5px; line-height: 1.7; font-style: italic; margin-bottom: 24px;">
+                            "We sourced Longi Hi-MO 7 panels for our factory roof. The efficiency gains are noticeable,
+                            and delivery was on schedule. Highly recommended supplier."
+                        </p>
+                        <div
+                            style="display: flex; align-items: center; gap: 14px; border-top: 1px solid #edf2f7; padding-top: 20px;">
+                            <div
+                                style="width: 48px; height: 48px; border-radius: 50%; background: var(--accent-soft); display: flex; align-items: center; justify-content: center; font-weight: 800; color: var(--accent);">
+                                TL</div>
+                            <div>
+                                <strong style="display: block; font-size: 14.5px; color: var(--primary);">Tan
+                                    Lee</strong>
+                                <span style="display: block; font-size: 12px; color: var(--text-soft);">Factory Owner,
+                                    Johor Bahru</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="product-card" style="padding: 32px; background: #fff; border-radius: 20px;">
+                        <div style="color: var(--accent); margin-bottom: 16px;">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p
+                            style="color: var(--text-soft); font-size: 14.5px; line-height: 1.7; font-style: italic; margin-bottom: 24px;">
+                            "Goodwe inverters paired with Solis batteries have given us excellent backup power. Jiujiang
+                            Maitong provided great guidance on system sizing."
+                        </p>
+                        <div
+                            style="display: flex; align-items: center; gap: 14px; border-top: 1px solid #edf2f7; padding-top: 20px;">
+                            <div
+                                style="width: 48px; height: 48px; border-radius: 50%; background: var(--accent-soft); display: flex; align-items: center; justify-content: center; font-weight: 800; color: var(--accent);">
+                                NM</div>
+                            <div>
+                                <strong style="display: block; font-size: 14.5px; color: var(--primary);">Nguyen
+                                    Minh</strong>
+                                <span style="display: block; font-size: 12px; color: var(--text-soft);">Homeowner,
+                                    Vietnam</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
 
 
 
@@ -1096,7 +1062,7 @@
             <button id="mobile-menu-close"><i class="fa-solid fa-xmark"></i></button>
         </div>
         <nav class="mobile-nav">
-            <a href="index.html">Home</a>
+            <a href="index.html" class="active">Home</a>
             <a href="about.html">About</a>
 
             <!-- Mobile Products Dropdown -->
@@ -1113,13 +1079,13 @@
                     </a>
                 </div>
             </div>
+
             <a href="#brands">Brands</a>
             <a href="#catalogue">Catalogue</a>
             <a href="contact.html">Contact</a>
             <a href="#contact"><button class="btn-primary full-width mobile-quote-btn">Request Quote</button></a>
         </nav>
     </div>
-
 
 
 

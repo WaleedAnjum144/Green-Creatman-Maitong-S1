@@ -423,3 +423,12 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+
+// Mobile Products Dropdown Toggle
+const mobileProductsToggle = document.getElementById('mobile-products-toggle');
+const mobileDropdown = mobileProductsToggle?.parentElement;
+
+mobileProductsToggle?.addEventListener('click', () => {
+    mobileDropdown.classList.toggle('active');
+});
