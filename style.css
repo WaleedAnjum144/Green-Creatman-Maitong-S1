@@ -729,6 +729,110 @@ main {
     font-size: 14px;
 }
 
+/* Ensure both View and Save buttons split perfectly 50/50 */
+.cat-actions {
+    display: flex;
+    gap: 12px;
+    position: relative;
+    z-index: 2;
+    margin-top: auto;
+    align-items: baseline;
+}
+
+.cat-actions > button,
+.cat-actions > a {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* Hover effects specifically for the kitchen blue buttons */
+.cat-actions a[style*="color:#0284c7"]:hover {
+    background: #f0f9ff !important;
+}
+
+/* ===================== EXPLORE MORE CARD (6th Position) ===================== */
+.explore-more-card {
+    background: #f8fafc;
+    border: 2px dashed #cbd5e1 !important; /* Dashed border to look like an empty slot / CTA */
+    box-shadow: none !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 30px;
+    min-height: 390px;
+}
+
+.explore-more-card::before {
+    display: none; /* Removes the circle gradient background */
+}
+
+.explore-more-card:hover {
+    background: #ffffff;
+    border-color: var(--accent) !important;
+    box-shadow: 0 24px 60px rgba(255, 113, 0, 0.10) !important;
+}
+
+.explore-icon {
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    background: #ffffff;
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.05);
+    transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+}
+
+.explore-more-card:hover .explore-icon {
+    transform: scale(1.1) translateY(-4px);
+    background: var(--accent);
+    color: #ffffff;
+}
+
+.explore-more-card h3 {
+    margin-bottom: 12px;
+    color: var(--primary);
+}
+
+.explore-more-card p {
+    color: var(--text-soft);
+    font-size: 14.5px;
+    margin-bottom: 34px;
+    max-width: 250px;
+}
+
+.explore-btn {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 16px 20px;
+    font-size: 12px;
+    width: auto !important; /* Overrides full-width if needed */
+    min-width: 200px;
+}
+
+.explore-btn i {
+    transition: transform 0.3s ease;
+}
+
+.explore-btn:hover i {
+    transform: translateX(4px); /* Arrow moves to the right on hover */
+}
+
+
 /* Products */
 .products-grid {
     display: grid;
@@ -2529,5 +2633,72 @@ option:hover {
         right: 1rem;
         bottom: 1rem;
         font-size: 0.82rem;
+    }
+}
+
+
+/* ============================================================
+   KITCHEN SWIPER STYLES
+   ============================================================ */
+
+.kitchen-slider-container {
+    position: relative;
+    padding: 0 40px; /* Space for navigation arrows */
+}
+
+.kitchenSwiper {
+    padding: 20px 0 40px; /* Space for shadow and pagination */
+}
+
+.kitchenSwiper .swiper-slide {
+    height: auto; /* Ensures all cards stretch equally */
+}
+
+.kitchenSwiper .product-card {
+    height: 100%; /* Make card take full height of slide */
+}
+
+/* Swiper Navigation Arrows */
+.kitchenSwiper .swiper-button-next,
+.kitchenSwiper .swiper-button-prev {
+    color: var(--primary);
+    background: #fff;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border: 1px solid #e2e8f0;
+}
+
+.kitchenSwiper .swiper-button-next:after,
+.kitchenSwiper .swiper-button-prev:after {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.kitchenSwiper .swiper-button-next:hover,
+.kitchenSwiper .swiper-button-prev:hover {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+}
+
+/* Swiper Pagination Dots */
+.kitchenSwiper .swiper-pagination-bullet {
+    background: #cbd5e1;
+    opacity: 1;
+}
+
+.kitchenSwiper .swiper-pagination-bullet-active {
+    background: var(--accent);
+}
+
+@media (max-width: 768px) {
+    .kitchen-slider-container {
+        padding: 0; /* Remove side padding on mobile */
+    }
+    .kitchenSwiper .swiper-button-next,
+    .kitchenSwiper .swiper-button-prev {
+        display: none; /* Hide arrows on mobile, users can swipe */
     }
 }

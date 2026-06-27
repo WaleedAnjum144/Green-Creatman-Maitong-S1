@@ -387,3 +387,39 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 });
+
+
+/* ============================================================
+   KITCHEN EQUIPMENT SWIPER INITIALIZATION
+   ============================================================ */
+document.addEventListener("DOMContentLoaded", function () {
+    if (document.querySelector(".kitchenSwiper")) {
+        var kitchenSwiper = new Swiper(".kitchenSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 24,
+            loop: true,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 24,
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 24,
+                }
+            }
+        });
+    }
+});
